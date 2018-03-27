@@ -30,29 +30,103 @@
 
 <div class="bunny">
 
-  <a href="#" title="" class="bunny__0" id="bunny0">
+  <a href="#" title=""
+     class="bunny__0" id="bunny0"
+     js-popupOpen
+     data-title="OLD BROWN BUNNY STILL HAS SOME SURPRISES!"
+     data-text="USE THE CODE BELOW FOR 20% OFF ARTISAN COLLECTION 6 x E-LIQUID VALUE PACK"
+     data-code="FUNNYBUNNY"
+     data-img="img/img__bunny-popup0.png"
+  >
     <img src="img/Bunny--0@2x.png" alt="" width="131" height="158">
   </a>
 
-  <a href="#" title="" class="bunny__1" id="bunny1">
+  <a href="#" title=""
+     class="bunny__1" id="bunny1"
+     js-popupOpen
+     data-title="OLD BROWN BUNNY STILL HAS SOME SURPRISES!"
+     data-text="USE THE CODE BELOW FOR 20% OFF ARTISAN COLLECTION 6 x E-LIQUID VALUE PACK"
+     data-code="BROWNBUNNY"
+     data-img="img/img__bunny-popup1.png"
+  >
     <img src="img/Bunny--1@2x.png" alt="" width="118" height="210">
   </a>
 
-  <a href="#" title="" class="bunny__2" id="bunny2">
+  <a href="#" title=""
+     class="bunny__2" id="bunny2"
+     js-popupOpen
+     data-title="EVEN OTHER PLANETS HAVE BUNNIES!"
+     data-text="USE THE CODE BELOW FOR 15% OFF ANY DELUXE STARTER KIT"
+     data-code="SPACEBUNNY"
+     data-img="img/img__bunny-popup2.png"
+  >
     <img src="img/Bunny--2@2x.png" alt="" width="267" height="283">
   </a>
 
-  <a href="#" title="" class="bunny__3" id="bunny3">
+  <a href="#" title=""
+     class="bunny__3" id="bunny3"
+     js-popupOpen
+     data-title="GEORGE BUNNY ISN’T THE QUICKEST FOR SOME REASON!?"
+     data-text="USE THE CODE BELOW FOR FREE STANDARD SHIPPING ON ORDERS OF $100 OR MORE"
+     data-code="ODDBUNNY"
+     data-img="img/img__bunny-popup3.png"
+  >
     <img src="img/Bunny--3@2x.png" alt="" width="204" height="291">
   </a>
 
-  <a href="#" title="" class="bunny__4" id="bunny4">
+  <a href="#" title=""
+     class="bunny__4" id="bunny4"
+     js-popupOpen
+     data-title="LUCKY FOR YOU, LAZY BUNNY TAKES IT PRETTY CASUAL!"
+     data-text="USE THE CODE BELOW FOR 20% OFF ANY VIBE STARTER KIT"
+     data-code="LAZYBUNNY"
+     data-img="img/img__bunny-popup4.png"
+  >
     <img src="img/Bunny--4@2x.png" alt="" width="179" height="167">
   </a>
 
-  <a href="#" title="" class="bunny__5" id="bunny5">
+  <a href="#" title=""
+     class="bunny__5" id="bunny5"
+     js-popupOpen
+     data-title="BONUS BUNNY MAKES IT WORTH THE CHASE!"
+     data-text="USE THE CODE BELOW TO BUY ANY E-LIQUID VALUE PACK AND GET 50% OFF THE SECOND VALUE PACK"
+     data-code="BONUSBUNNY"
+     data-img="img/img__bunny-popup5.png"
+  >
     <img src="img/Bunny--5@2x.png" alt="" width="92" height="157">
   </a>
+
+</div>
+
+<div class="popup" id="popup">
+
+  <div class="popup__overlay"></div>
+
+  <div class="popup__body">
+
+    <a href="#" title="" class="popup__close" js-popupClose></a>
+
+    <div class="popup__content">
+
+      <div class="popup__header">
+        <h2 id="popupTitle"></h2>
+        <p id="popupText"></p>
+      </div>
+
+      <div class="popup__footer">
+
+        <p id="couponText">COUPON CODE:</p>
+        <p id="couponCode"></p>
+
+        <button type="button" id="popupBtn">SHOP NOW</button>
+
+      </div>
+
+      <img src="" alt="" class="popup__bunny" id="popupBunny">
+
+    </div>
+
+  </div>
 
 </div>
 
