@@ -5,6 +5,9 @@
   var _document = document,
     _window = window;
 
+  var _html = _document.getElementsByTagName("html")[0],
+    _body = _document.getElementsByTagName("body")[0];
+
   var popUp = _document.getElementById("popup"),
     popUpTitle = _document.getElementById("popupTitle"),
     popUpText = _document.getElementById("popupText"),
@@ -25,6 +28,8 @@
       popUpImg.src = elem.dataset.img;
 
       popUp.classList.add("is-active");
+      _html.classList.add("is-open");
+      _body.classList.add("is-open");
     });
   });
 
@@ -35,15 +40,24 @@
   var btnClosePopup = _document.querySelector("[js-popupClose]");
   var overlayPopup = _document.querySelector(".popup__overlay");
 
-  btnClosePopup.addEventListener("click", function(){
+  /**
+   *
+   */
+  function removeClassName () {
     popUp.classList.remove("is-active");
+    _html.classList.remove("is-open");
+    _body.classList.remove("is-open");
+  }
+
+  btnClosePopup.addEventListener("click", function(){
+    removeClassName();
   });
   overlayPopup.addEventListener("click", function(){
-    popUp.classList.remove("is-active");
+    removeClassName();
   });
   _window.addEventListener("keyup", function(e){
     if (e.keyCode === 27) {
-      popUp.classList.remove("is-active");
+      removeClassName();
     }
   });
 })();
